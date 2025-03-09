@@ -21,8 +21,10 @@ const FileUpload = () => {
             formData.append("files", file);
         }
 
+        console.log(import.meta.env.VITE_APP_URL)
+
         try {
-            const res = await axios.post("http://localhost:5000/send-email", formData, {
+            const res = await axios.post(`${import.meta.env.VITE_APP_URL}/send-email`, formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
             setMessage(res.data.message);
