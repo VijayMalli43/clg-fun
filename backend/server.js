@@ -6,7 +6,9 @@ require("dotenv").config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin : "https://lab-e4iwi9ctr-madhans-projects-418c7660.vercel.app/"
+}));
 
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
