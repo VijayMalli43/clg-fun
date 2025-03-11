@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/next';
+
 
 export const metadata: Metadata = {
   title: "Simplifying Lab Assignment Submissions",
@@ -25,7 +26,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>{children}
-        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
