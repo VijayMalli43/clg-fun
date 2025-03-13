@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Analytics } from '@vercel/analytics/next';
-
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Simplifying Lab Assignment Submissions",
@@ -19,13 +18,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta name="google-adsense-account" content="ca-pub-6049004127367436"></meta>
+        <meta name="google-adsense-account" content="ca-pub-6049004127367436" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>crazycodes</title>
         <link rel="icon" href="/favicon.ico" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6049004127367436"
+          crossorigin="anonymous"
+        ></script>
       </head>
-      <body>{children}
+      <body>
+        {children}
         <Analytics />
       </body>
     </html>
