@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     "crazy codes lab submission negative",
     "crazy codes lab submission limitation",
     "crazy codes lab submission restriction",
-    "crazy codes lab submission constraint"
+    "crazy codes lab submission constraint",
   ],
 
   // og: {
